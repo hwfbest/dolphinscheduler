@@ -196,7 +196,8 @@ export default defineComponent({
         if (!props.row.crontab) return
 
         timingState.timingForm.startEndTime = [
-          new Date(props.row.startTime),
+          //new Date(props.row.startTime),
+          new Date(Date.now()),
           new Date(props.row.endTime)
         ]
         timingState.timingForm.crontab = props.row.crontab
